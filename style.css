@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+    padding-top: 30px;
+}
+#canvas {
+    margin-bottom: 10px;
+}
+.main{
+    width: 660px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 30px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input, select, button{
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+button:focus{
+    outline: none;
+}
+
+.btn{
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-blue{
+    background-color: #0074D9;
+    color: white;
+}
+.btn-red{
+    background-color: #FF4136;
+    color: white;
+}
+#quantity{
+    width: 60px;
+}
+.sorting{
+    margin-top: 60px;
+    text-align: left;
+}
+.scrollable{
+    max-height: calc(7ex + 30px);
+    overflow: auto;
+    margin-top: 30px;
+}
+.visualOption{
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border:solid 2px #ffffff;
+}
+.selected{
+    border: solid 2px #0074D9;
+}

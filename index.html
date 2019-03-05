@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Visualising Sorting Algorithms</h1>
+        
+        <a id="bars" class="visualOption selected">Bars</a>
+        <a id="dots" class="visualOption">Dots</a>
+        <br>
+        
+        <div class="main">
+            <canvas id="canvas"></canvas><br>
+            <label for="speed">Speed:</label>
+            <select name="Speed" id="speed">
+                <option value="1">Super Fast</option>
+                <option value="50">Fast</option>
+                <option value="100">Medium</option>
+                <option value="250">Slow</option>
+                <option value="500">Super Slow</option>
+                <option value="1000">Ultra Slow</option>
+                <option value="2000">2 Seconds</option>
+            </select>
+            <label for="quantity">Array Length:</label>
+            <input type="number" id="quantity" value="50" max="5000">
+            <button id="generateArray" class='btn btn-blue'>Generate Array</button>
+            <button id="reset" class='btn btn-red'>Reset</button>
+            <br>
+            <div class="sorting">
+            <h3>Sorting algorithms</h3>
+            <button id="bubbleSort" class="btn">Bubble Sort</button>
+            <button id="mergeSort" class="btn">Merge Sort</button>
+            <button id="bubbleSort" class="btn">QuickSort</button>
+            <button id="bubbleSort" class="btn">Heap Sort</button>
+            <button id="bubbleSort" class="btn">Insertion Sort</button>
+            <br>
+            <div class="scrollable">
+                <p id="sortInfo"> </p>
+            </div>
+            </div>
+        </div>
+
+        <script src="app.js" async defer></script>
+        
+    </body>
+</html>
